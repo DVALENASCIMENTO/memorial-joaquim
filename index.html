@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memorial Musical - Joaquim Alves do Nascimento</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#d4af37">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- POPUP -->
+<div id="welcome-popup" class="popup">
+    <div class="popup-content">
+        <h2>“Não quero ver ninguém triste.<br>
+        Quero todos alegres fazendo festa.”</h2>
+        <p>— Joaquim Alves do Nascimento</p>
+        <button id="enter-btn">Entrar</button>
+    </div>
+</div>
+
+<div class="background"></div>
+
+<header>
+    <h1>Memorial Musical</h1>
+    <h2>Joaquim Alves do Nascimento</h2>
+</header>
+
+<section class="bio">
+    <img src="img/Joaquim, Boiadeiro.jpeg" alt="Joaquim Alves do Nascimento">
+    <p>
+        Joaquim Alves do Nascimento deixou um legado de alegria, música e celebração.
+        Suas canções permanecem vivas no coração da família e amigos.
+    </p>
+</section>
+
+<section class="slideshow">
+    <div class="slider">
+        <img id="slide" src="img/joaquim cantando.jpeg">
+    </div>
+</section>
+
+
+<section class="player-section">
+    <div class="player">
+
+        <div class="track-info">
+            <h4 id="track-title">Música 1</h4>
+        </div>
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="next">⏭</button>
+        </div>
+
+        <div class="progress-container">
+            <input type="range" id="progress" value="0">
+            <div class="time">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="volume-container">
+            <label>Volume</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+
+        <audio id="audio"></audio>
+
+    </div>
+</section>
+
+
+<footer>
+    <p>In Memoriam • Joaquim Alves do Nascimento</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
